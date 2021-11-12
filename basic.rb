@@ -65,3 +65,34 @@
   #   :age => 18
   # }
   # puts arr["name"]
+
+# Методы
+  # def voice (sometext = "Some text")
+  #   puts sometext
+  #   return sometext
+  # end
+  # voice
+
+# Условные операторы
+  # age = 15
+  # if age >= 18 or age == 30
+  #   puts "yes"
+  # elsif
+  #   puts "no"
+  # else 
+  #   puts "no"
+  # end
+  
+  # case "3"
+  # when "1"
+  #   puts "One"
+  # when "2"
+  #   puts "Two"
+  # else
+  #   puts "Other"
+  # end
+
+# Циклы
+  for value in enumerable do
+    
+  end
