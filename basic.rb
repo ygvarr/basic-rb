@@ -93,6 +93,91 @@
   # end
 
 # Циклы
-  for value in enumerable do
-    
-  end
+  # secret = "red"
+  # color = ""
+  # while color != secret
+  #   puts "enter color:"
+  #   color = gets.chomp 
+  # end
+  # puts "win"
+
+  # numbers = [1,1,2,3,5,8,13]
+  # for i in 0..numbers.length-1
+  #   puts numbers[i]
+  # end
+
+  # colors = ["red","green","blue","black"]
+  # colors.each do |element|
+  #   puts element
+  # end
+
+# Файлы
+  # "r" режим чтения
+  # "a" режим записи
+  # "w" режим перезаписи
+
+  # File.open("todo.txt","r") do |file|
+    # puts file.read #прочитать файл
+    # puts file.readline #прочитать строку
+    # puts file.readchar #прочитать символ
+
+    # for i in file.readlines
+    #   puts i
+    # end
+  # end
+
+  # file = File.open("todo.txt","r")
+  # file.close
+
+  # File.open("todo.txt","a") do |file|
+  #   file.write("\n")
+  #   file.write("Cleaning")
+  # end
+
+  # File.open("index.html","w") do |file|
+  #   file.write("<h1>Hello world!</h1>")
+  # end
+
+# Отслеживание ошибок
+  # begin
+  #   puts 1 / 0
+  # rescue => e
+  #   puts e
+  # end
+
+# Объекты и классы (ООП)
+  # class Phones
+  #   #свойства объектов (переменные)
+  #   attr_accessor :model, :color, :price 
+
+  #   #конструктор класса
+  #   def initialize(model = "", color = "") 
+  #     @model = model
+  #     @color = color
+  #   end
+
+  #   #методы объектов
+  #   def sayModel
+  #     puts @model
+  #   end
+  # end
+
+  # samsung = Phones.new("Samsung","White")
+  # nokia = Phones.new
+
+  # nokia.model = "Nokia"
+
+  # samsung.sayModel
+
+# Наследование, модули
+  # class Phones
+  # end
+
+  # # Наследование
+  # class Touch < Phones
+  # end
+
+  # # Модули
+  # require_relative "tools.rb"
+  # include Tools
+  # Tools.sayBye("Alex")
