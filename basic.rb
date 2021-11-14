@@ -1,9 +1,9 @@
-# Комментарии
+### Комментарии
 =begin
 code
 =end
 
-# Типы
+### Типы
 varString = " ruby \" \n cool "
 varInteger = 1
 varFloat = 3.14
@@ -12,7 +12,7 @@ varNil = nil
 #тип данных
 5.class
 
-# Строки
+### Строки
 # верхний и нижний регистр текста
 "Text".upcase.downcase
 # удаляет пробелы в начале и конце строки
@@ -27,7 +27,7 @@ varNil = nil
 "15".to_i
 "3.14".to_f
 
-# Числа
+### Числа
 # возведение в степень
 5 ** 2
 # остаток от деления
@@ -41,23 +41,27 @@ Math.sqrt(9)
 # случайное число
 rand(50)
 
-# Ввод данных
+### Ввод данных
 # puts "Enter name: "
 #gets.chomp без перевода на новую строку
 # name = gets
 # puts "Name: #{name}"
 
-# Массивы
+### Массивы
 arr = %w[Red Green Blue]
 arr = [1, 1, 2, 3, 5, 8, 13]
 arr.pop # удалить последний элемент
 arr.shift # удалить первый элемент
 arr.push(21) # добавить элемент в конец массива
+arr << 21 # добавить элемент в конец массива
+arr.find_all { |el| el.odd? } # проверяет нечетное ли число
+arr.find_all { |el| el.even? } # проверяет четное ли число
+arr.find_all { |el| el.odd? unless el.nil? } # проверяет нечетное ли число если это число
 arr.reverse
 arr.length
 arr.include? 5
 
-# Ассоциативные массивы (хеш)
+### Ассоциативные массивы (хеш)
 hash = {
   "name" => "Alex",
   :age => 18,
@@ -69,13 +73,13 @@ hash = {
 }
 hash[:name]
 
-# Методы
+### Методы
 def voice(sometext = "Some text")
   puts sometext
   return sometext
 end
 
-# Условные операторы
+### Условные операторы
 # age = 15
 # if age >= 18 or age == 30
 #   puts "yes"
@@ -94,7 +98,7 @@ end
 #   puts "Other"
 # end
 
-# Циклы
+### Циклы
 secret = "red"
 color = ""
 # while color != secret
@@ -112,7 +116,7 @@ colors.each do |element|
 end
 colors.each { |element| element } #однострочный аналог
 
-# Файлы
+### Файлы
 # "r" режим чтения
 # "a" режим записи
 # "w" режим перезаписи
@@ -134,14 +138,14 @@ colors.each { |element| element } #однострочный аналог
 #   file.write("<h1>Hello world!</h1>")
 # end
 
-# Отслеживание ошибок
+### Отслеживание ошибок
 begin
   puts 1 / 0
 rescue => e
   e
 end
 
-# Объекты и классы (ООП)
+### Объекты и классы (ООП)
 class Phones
   #обьявление геттеров
   attr_reader :model, :color, :price
